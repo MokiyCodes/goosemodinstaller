@@ -8,5 +8,5 @@ An unofficial goosemod installer, written in Typescript, raw HTML (because pain)
 ![image](https://user-images.githubusercontent.com/67464646/121822899-ff4d7780-cca1-11eb-8d1a-e3f12e051a7c.png)
 
 ## Downloads
-[Windows](https://github.com/0J3/goosemodinstaller/releases/latest/download/Goosemod.Installer-Windows.exe)
+[Windows](https://github.com/0J3/goosemodinstaller/releases/latest/download/Goosemod.Installer-Windows.exe)<br/>
 [Linux](https://nora.lgbt/soon#release) (Not available yet due to being a pain in the ass)
