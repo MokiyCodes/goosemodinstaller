@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GooseModInstaller</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="../../bin/electron/index.js"></script>
+  </head>
+  <body>
+    <div class="contents">
+      <div class="titlebar">
+        <img class="icon" src="./goosetransparent.ico" />
+        <div class="close titlebtn" onclick="window.close()">×</div>
+        <div
+          class="minimise titlebtn"
+          onclick="require('electron').ipcRenderer.send('min')"
+        >
+          ─
+        </div>
+      </div>
+      <div class="main">
+        <div class="terms card shown" id="terms" style="text-align: center">
+          By clicking next, you agree to the<br /><a
+            href="https://github.com/GooseMod/GooseMod/blob/master/LICENSE"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Goosemod License</a
+          >.<br />
+          You additionally agree to the
+          <a
+            href="https://github.com/0J3/goosemodinstaller/blob/main/LICENSE"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GooseMod Installer License</a
+          >
+        </div>
+        <div class="discordList card hidden right" id="discordList">
+          <div class="disc stable" id="Stable" onclick="toggle('Stable')">
+            <img src="./Stable.ico" alt="StableIcon" class="icon" />
+            <div class="infoContainer">
+              <div class="info">
+                <b>Discord</b><br /><span class="isInstalled"
+                  >Not Detected</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="disc ptb" id="PTB" onclick="toggle('PTB')">
+            <img src="./Stable.ico" alt="StableIcon" class="icon" />
+            <div class="infoContainer">
+              <div class="info">
+                <b>Discord PTB</b><br /><span class="isInstalled"
+                  >Not Detected</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="disc canary" id="Canary" onclick="toggle('Canary')">
+            <img src="./Canary.ico" alt="StableIcon" class="icon" />
+            <div class="infoContainer">
+              <div class="info">
+                <b>Discord Canary</b><br /><span class="isInstalled"
+                  >Not Detected</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="disc dev" id="Dev" onclick="toggle('Dev')">
+            <img src="./Dev.ico" alt="StableIcon" class="icon" />
+            <div class="infoContainer">
+              <div class="info">
+                <b>Discord Development</b><br /><span class="isInstalled"
+                  >Not Detected</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="installing card hidden right"
+          id="installing"
+          style="text-align: center"
+        >
+          <h2>Installing Goosemod</h2>
+          <p>Please wait...</p>
+        </div>
+        <div
+          class="installcomplete card hidden right"
+          id="installcomplete"
+          style="text-align: center"
+        >
+          <h2>Installation Complete!</h2>
+          <p>
+            Press the X at the top to close the installer.<br />
+            You will need to restart discord <br />(system tray>close discord
+            included) to finish the installation.
+          </p>
+        </div>
+        <div class="buttons">
+          <button class="next" id="next" onclick="next()">Next</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

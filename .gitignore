@@ -1,3 +1,9 @@
+# Binaries (js)
+bin
+
+# Dist files
+dist
+
 # Logs
 logs
 *.log

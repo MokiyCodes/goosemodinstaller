@@ -1,0 +1,194 @@
+/* Contents */
+.contents {
+  --border: 10px;
+  background-image: url('./Tile.png');
+  background-size: 20px;
+  border-radius: var(--border);
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: block;
+  position: fixed;
+  color: #fff;
+  /* background: #000; */
+}
+
+/* Titlebar */
+.titlebar {
+  --height: 32px;
+  --titlebtnwidth: 48px;
+  background-color: #0c0d10;
+  border-top-left-radius: var(--border);
+  border-top-right-radius: var(--border);
+  width: 100vw;
+  height: 32px;
+  -webkit-app-region: drag;
+  font-family: 'Times New Roman', Times, serif;
+}
+.titlebar * {
+  display: inline;
+}
+.titlebar .icon {
+  --padding: 3px;
+  width: calc(var(--height) - calc(var(--padding) * 2));
+  height: calc(var(--height) - calc(var(--padding) * 2));
+  display: block;
+  left: var(--padding);
+  top: var(--padding);
+  position: fixed;
+  /* background-image: url('./goosetransparent.ico'); */
+}
+.titlebtn {
+  --v: calc(var(--height) / 4);
+  height: calc(var(--v) * 3);
+  width: var(--titlebtnwidth);
+  /* position: fixed; */
+  /* right: calc(var(--titlebtnwidth) * var(--itemn)); */
+  float: right;
+  text-align: center;
+  -webkit-app-region: no-drag;
+  cursor: default;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+.titlebtn:hover {
+  background: var(--hoverclr);
+}
+.titlebtn.close {
+  --hoverclr: #d13d3d;
+  border-top-right-radius: var(--border);
+  font-size: 1.5em;
+  padding-top: calc(var(--v) / 2);
+  height: calc(var(--height) - calc(var(--v) / 2));
+  /* --itemn: 0; */
+}
+.titlebtn.minimise {
+  --hoverclr: #00000048;
+  padding-top: var(--v);
+  /* --itemn: 1; */
+}
+
+/* Main */
+.main {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Installations */
+.disc {
+  height: 15vh;
+  margin: 5vh 24px;
+  width: calc(100vw - 48px);
+  border-radius: 5px;
+  background: #14151b;
+  transition: background 0.5s;
+}
+.disc.active {
+  background: #3a71c1;
+}
+.disc .icon {
+  max-height: 75%;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+  position: relative;
+  display: inline;
+}
+.disc .infoContainer {
+  display: inline-block;
+  position: absolute;
+  left: 100px;
+}
+.disc .infoContainer .info {
+  position: relative;
+  top: 5px;
+}
+.disc .infoContainer .info b {
+  font-family: Discord, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.disc .infoContainer .info .isInstalled {
+  font-size: 12px;
+  color: #95989d;
+  position: relative;
+  top: -3px;
+}
+
+.disc,
+.disc * {
+  cursor: pointer;
+}
+
+/* Terms */
+.terms {
+  margin-top: 25px;
+}
+
+/* Installing */
+.installing {
+  padding: 10px 0;
+}
+
+/* Buttons */
+button:not(.alt) {
+  border: 1px solid transparent;
+  background-color: #3a71c1;
+  color: #ffffff;
+  margin-right: 25px;
+}
+button.next {
+  float: right;
+}
+button {
+  width: auto;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 150ms ease;
+  cursor: pointer;
+  padding: 0 12px;
+  height: 28px;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 2px;
+}
+.buttons {
+  position: fixed;
+  bottom: 5px;
+  width: 100vw;
+  transition: bottom 1s;
+}
+
+/* Cards */
+.card {
+  transition: left 1s;
+  position: absolute;
+  width: 100vw;
+  max-width: 100vw;
+}
+.card.shown {
+  left: 0;
+}
+.card.hidden {
+  left: -100vw;
+}
+.card.hidden.right {
+  left: 100vw;
+}
+
+/* Links */
+a[href] {
+  color: #fff;
+}
+
+/* Fonts */
+@font-face {
+  font-family: Discord;
+  src: url(https://nora.lgbt/fonts/DiscordFont.ttf);
+}
