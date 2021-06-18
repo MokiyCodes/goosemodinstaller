@@ -1,4 +1,4 @@
-import { existsSync } from "fs";
+import { existsSync, readdirSync } from "fs";
 
 export interface Client {
   name: string;
@@ -18,6 +18,12 @@ const getLinux = () => {
   if (process.env.HOME) {
     const linuxVariants = [process.env.HOME + "/.config/discord/settings.json"];
 
+    if (existsSync("/home/")) {
+      readdirSync("/home/").forEach((dir) => {
+        linuxVariants.push(`/home/${dir}/.config/discord/settings.json`);
+      });
+    }
+
     let linuxStablePath: string = "";
 
     linuxVariants.forEach((v: string) => {
@@ -26,7 +32,7 @@ const getLinux = () => {
 
     return linuxStablePath;
   }
-  return "";
+  return process.env.HOME + "/.config/discord/settings.json";
 };
 
 export const clients: Clients = {
@@ -41,21 +47,21 @@ export const clients: Clients = {
     name: "PTB",
     path: {
       win32: process.env.APPDATA + "\\discordptb\\settings.json",
-      linux: ``,
+      linux: `unknown`,
     },
   },
   canary: {
     name: "Canary",
     path: {
       win32: process.env.APPDATA + "\\discordcanary\\settings.json",
-      linux: ``,
+      linux: `unknown`,
     },
   },
   dev: {
     name: "Dev",
     path: {
       win32: process.env.APPDATA + "\\discorddevelopment\\settings.json",
-      linux: ``,
+      linux: `unknown`,
     },
   },
 };

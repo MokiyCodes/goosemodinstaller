@@ -1,0 +1,9 @@
+Package: goosemod
+Version: 1.0.2
+Section: custom
+Priority: optional
+Architecture: all
+Essential: no
+Installed-Size: 1
+Maintainer: Nora <0J3@wafflepowered.com>
+Description: Install GooseMod (using postinstallation script - install using apt install /path/to/this/file in a terminal for information)
