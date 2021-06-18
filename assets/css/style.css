@@ -2,4 +2,8 @@
 ---
 
 @import "{{ site.theme }}";
-body{background:#1a1a1a;color:#fff}
+
+body{
+  background:#1a1a1a;
+  color:#fff;
+}
