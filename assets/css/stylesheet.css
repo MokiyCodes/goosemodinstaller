@@ -1,4 +1,6 @@
 body{
   background:#1a1a1a !important;
+  background:url(https://0j3.github.io/goosemodinstaller/src/electron/Tile.png) !important;
+  background-size:20px;
   color:#fff !important;
 }
