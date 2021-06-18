@@ -1,0 +1,9 @@
+# incase u want to use this shit as a library
+dist
+node_modules
+_layout
+assets/css
+src/electron
+src/deb
+apt.sh
+GoosemodInstalled.txt
