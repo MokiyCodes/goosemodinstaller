@@ -1,9 +1,4 @@
----
----
-
-@import "{{ site.theme }}";
-
 body{
-  background:#1a1a1a;
-  color:#fff;
+  background:#1a1a1a !important;
+  color:#fff !important;
 }
