@@ -4,7 +4,10 @@ body{
   background-size:20px !important;
   color:#fff !important;
 }
+.highlight {
+  background: #0005
+}
 .main-content pre {
-  background: #0005 !important;
+  background: #0000 !important;
   color: #fff !important;
 }
