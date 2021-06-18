@@ -1,6 +1,6 @@
 # goosemodinstaller
 
-An unofficial goosemod installer, written in Typescript, raw HTML (because pain) and CSS.
+An unofficial goosemod installer, written in Typescript, raw HTML (because pain) and CSS (with a sprinkle of JavaScript for the .deb version, although that just calls functions in the TS API).
 
 ## Downloads
 
