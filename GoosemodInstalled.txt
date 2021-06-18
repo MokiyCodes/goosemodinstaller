@@ -1,0 +1,9 @@
+#############################################
+#  GOOSEMOD INSTALLER                  _  x #
+#############################################
+# You will need to close your discord       #
+# client (from the tray) and then open it   #
+# again, to finish installing goosemod!     #
+# - 0J3                                     #
+# P.S. Thank you for using GooseMod         #
+#############################################
