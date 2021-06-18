@@ -5,7 +5,7 @@ body{
   color:#fff !important;
 }
 .highlight > code {
-  filter:invert();
+  filter: invert() hue-rotate(180deg);
 }
 .highlight {
   background: #0005 !important;
