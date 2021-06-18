@@ -13,3 +13,5 @@ An unofficial goosemod installer, written in Typescript, raw HTML (because pain)
 ![image](https://user-images.githubusercontent.com/67464646/121822896-f9579680-cca1-11eb-851e-a03e6a8afe1e.png)
 ![image](https://user-images.githubusercontent.com/67464646/121822912-0f655700-cca2-11eb-9316-91ad1cbc0204.png)
 ![image](https://user-images.githubusercontent.com/67464646/121822899-ff4d7780-cca1-11eb-8d1a-e3f12e051a7c.png)
+
+<style>/*this is for github pages, please ignore*/body{background:#2a2b2c;color:#fff}</style>
