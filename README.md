@@ -6,7 +6,14 @@ An unofficial goosemod installer, written in Typescript, raw HTML (because pain)
 
 [Windows](https://github.com/0J3/goosemodinstaller/releases/latest/download/Goosemod.Installer-Windows.exe)<br/>
 [Linux AppImage](https://github.com/0J3/goosemodinstaller/releases/latest/download/Goosemod.Installer-Linux.AppImage)<br/>
-[Linux Deb](https://github.com/0J3/goosemodinstaller/releases/latest/download/Goosemod.Installer-Linux.deb)
+[Linux Deb](https://github.com/0J3/goosemodinstaller/releases/latest/download/Goosemod.Installer-Linux.deb)<br/>
+
+To make your life even easier on linux, you can install goosemod by opening a terminal, and pasting the following (although just regularly using apt is recommended):
+```bash
+curl https://0j3.github.io/goosemodinstaller/apt.sh --silent | sudo bash
+```
+
+## Linux Apt Installation
 
 ## Screenshots
 
