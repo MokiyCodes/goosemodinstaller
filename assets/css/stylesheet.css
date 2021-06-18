@@ -4,6 +4,9 @@ body{
   background-size:20px !important;
   color:#fff !important;
 }
+.highlight > code {
+  filter:invert();
+}
 .highlight {
   background: #0005 !important;
 }
