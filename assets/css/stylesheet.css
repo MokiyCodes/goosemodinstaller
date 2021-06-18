@@ -4,3 +4,7 @@ body{
   background-size:20px !important;
   color:#fff !important;
 }
+.main-content pre {
+  background: #0005 !important;
+  color: #fff !important;
+}
