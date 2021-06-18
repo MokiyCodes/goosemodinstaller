@@ -1,3 +1,5 @@
+import { existsSync } from "fs";
+
 export interface Client {
   name: string;
   path: {
@@ -12,32 +14,47 @@ export interface Clients {
   dev: Client;
 }
 
+const getLinux = () => {
+  if (process.env.HOME) {
+    const linuxVariants = [process.env.HOME + "/.config/discord/settings.json"];
+
+    let linuxStablePath: string = "";
+
+    linuxVariants.forEach((v: string) => {
+      linuxStablePath = existsSync(v) ? v : linuxStablePath;
+    });
+
+    return linuxStablePath;
+  }
+  return "";
+};
+
 export const clients: Clients = {
   stable: {
-    name: 'Stable',
+    name: "Stable",
     path: {
-      win32: process.env.APPDATA + '\\discord\\settings.json',
-      linux: ``,
+      win32: process.env.APPDATA + "\\discord\\settings.json",
+      linux: getLinux(),
     },
   },
   ptb: {
-    name: 'PTB',
+    name: "PTB",
     path: {
-      win32: process.env.APPDATA + '\\discordptb\\settings.json',
+      win32: process.env.APPDATA + "\\discordptb\\settings.json",
       linux: ``,
     },
   },
   canary: {
-    name: 'Canary',
+    name: "Canary",
     path: {
-      win32: process.env.APPDATA + '\\discordcanary\\settings.json',
+      win32: process.env.APPDATA + "\\discordcanary\\settings.json",
       linux: ``,
     },
   },
   dev: {
-    name: 'Dev',
+    name: "Dev",
     path: {
-      win32: process.env.APPDATA + '\\discorddevelopment\\settings.json',
+      win32: process.env.APPDATA + "\\discorddevelopment\\settings.json",
       linux: ``,
     },
   },

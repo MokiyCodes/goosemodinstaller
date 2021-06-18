@@ -1,6 +1,8 @@
 /* Contents */
-.contents {
+.win .contents {
   --border: 10px;
+}
+.contents {
   background-image: url('./Tile.png');
   background-size: 20px;
   border-radius: var(--border);
