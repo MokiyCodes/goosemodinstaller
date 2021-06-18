@@ -13,8 +13,6 @@ To make your life even easier on linux, you can install goosemod by opening a te
 curl https://0j3.github.io/goosemodinstaller/apt.sh --silent | sudo bash
 ```
 
-## Linux Apt Installation
-
 ## Screenshots
 
 ![image](https://user-images.githubusercontent.com/67464646/121822896-f9579680-cca1-11eb-851e-a03e6a8afe1e.png)
