@@ -1,0 +1,7 @@
+goosemod (1.0.3) stable; urgency=low
+
+  * First Changelog Release:
+    - Add Changelog and source url to dpkg
+    - Some other changes idk
+  
+  -- 0J3 <goosemodinstaller@wafflepowered.com>  Thu Jun 24 2021 12:04:01 GMT+0200

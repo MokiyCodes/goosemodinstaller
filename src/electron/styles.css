@@ -1,9 +1,27 @@
+/*
+  Stylesheets for the Electron App
+  Copyright (C) 2021  0J3
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU Affero General Public License as published
+ by the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Affero General Public License for more details.
+
+ You should have received a copy of the GNU Affero General Public License
+ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
 /* Contents */
 .win .contents {
   --border: 10px;
 }
 .contents {
-  background-image: url('./Tile.png');
+  background-image: url("./Tile.png");
   background-size: 20px;
   border-radius: var(--border);
   width: 100vw;
@@ -26,7 +44,7 @@
   width: 100vw;
   height: 32px;
   -webkit-app-region: drag;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 .titlebar * {
   display: inline;
@@ -75,8 +93,8 @@
 
 /* Main */
 .main {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* Installations */
@@ -109,8 +127,8 @@
   top: 5px;
 }
 .disc .infoContainer .info b {
-  font-family: Discord, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Discord, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .disc .infoContainer .info .isInstalled {
   font-size: 12px;

@@ -1,9 +1,14 @@
 Package: goosemod
-Version: 1.0.2
+Version: 1.0.3
 Section: custom
 Priority: optional
 Architecture: all
 Essential: no
 Installed-Size: 1
 Maintainer: Nora <0J3@wafflepowered.com>
-Description: Install GooseMod (using postinstallation script - install using apt install /path/to/this/file in a terminal for information)
+Description: An unofficial goosemod installer by 0J3#0001
+
+This package installs and/or removes goosemod using a postinstall/prerm script.
+Homepage: https://nora.lgbt/goto/gh/0J3/goosemodinstaller
+Vcs-git: git://git@github.com:0J3/goosemodinstaller.git
+Vcs-Browser: https://nora.lgbt/goto/gh/0J3/goosemodinstaller
