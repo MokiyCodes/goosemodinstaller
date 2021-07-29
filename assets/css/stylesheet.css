@@ -16,6 +16,6 @@ body{
   border: solid 1px #242424;
 }
 .main-content code {
-  color: rgb(162, 154, 143);
-  background-color: rgb(21, 23, 24);
+  color: rgb(162, 154, 143) !important;
+  background-color: rgb(21, 23, 24) !important;
 }
