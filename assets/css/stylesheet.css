@@ -15,3 +15,7 @@ body{
   color: #fff !important;
   border: solid 1px #242424;
 }
+.main-content code {
+  color: rgb(162, 154, 143);
+  background-color: rgb(21, 23, 24);
+}
