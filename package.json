@@ -16,7 +16,7 @@
     "deb_prerm": "pkg -t node14-linux ./prerm.js"
   },
   "devDependencies": {
-    "electron": "^13.3.0",
+    "electron": "^13.6.6",
     "electron-builder": "^22.4.1",
     "pkg": "^5.2.1"
   },
